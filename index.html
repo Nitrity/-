@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Мокринский Сергей</title>
+  <meta name="description" content="Портфолио: проекты, навыки, опыт, образование, контакты">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Верхняя навигация -->
+  <header class="topbar">
+    <a class="logo" href="#home" data-goto="0">ВИ<span>.</span></a>
+    <nav class="menu" aria-label="Разделы портфолио">
+      <button data-goto="0" class="menu-btn active">Главная</button>
+      <button data-goto="1" class="menu-btn">Проекты</button>
+      <button data-goto="2" class="menu-btn">Навыки</button>
+      <button data-goto="3" class="menu-btn">Опыт</button>
+      <button data-goto="4" class="menu-btn">Образование</button>
+      <button data-goto="5" class="menu-btn">Контакты</button>
+    </nav>
+  </header>
+
+  <main class="deck" id="deck">
+
+    <!-- СЛАЙД 1. ГЛАВНАЯ -->
+    <section class="slide active" id="home">
+      <div class="slide-inner hero">
+        <div class="hero-text">
+          <p class="eyebrow">Привет, я</p>
+          <h1>Нитрит, аКа Мокринский Сергей</h1>
+          <h2>Веб-разработчик / Дизайнер</h2>
+          <p class="lead">
+            Создаю современные сайты и интерфейсы: от макета в Figma до готовой
+            вёрстки на HTML, CSS и JavaScript. Люблю аккуратный код и понятный дизайн.
+          </p>
+          <div class="btn-row">
+            <button class="btn primary" data-goto="1">Смотреть проекты</button>
+            <button class="btn ghost" data-goto="5">Связаться со мной</button>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Аватар">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <rect width="200" height="200" rx="40" fill="url(#g1)"/>
+            <circle cx="100" cy="78" r="34" fill="#fff" opacity=".92"/>
+            <path d="M32 178c8-38 38-56 68-56s60 18 68 56z" fill="#fff" opacity=".92"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЛАЙД 2. ПРОЕКТЫ -->
+    <section class="slide" id="projects">
+      <div class="slide-inner">
+        <h2 class="title">Проекты</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="cover c1">Tilda</div>
+            <h3>Лендинг на Tilda</h3>
+            <p>Одностраничный сайт для малого бизнеса. Адаптивная вёрстка, формы заявок.</p>
+            <a class="link" href="https://github.com/Nitrity/Tilda-Projects" target="_blank" rel="noopener">Открыть на GitHub →</a>
+          </article>
+          <article class="card">
+            <div class="cover c2">Figma</div>
+            <h3>Дизайн мобильного приложения</h3>
+            <p>Прототип интерфейса: сетка, UI-кит, пользовательские сценарии.</p>
+            <a class="link" href="https://www.figma.com/" target="_blank" rel="noopener">Смотреть макет →</a>
+          </article>
+          <article class="card">
+            <div class="cover c3">&lt;/&gt;</div>
+            <h3>Сайт на HTML/CSS/JS</h3>
+            <p>Многостраничный сайт с интерактивными элементами и анимациями.</p>
+            <a class="link" href="https://github.com/Nitrity/MyProject" target="_blank" rel="noopener">Код проекта →</a>
+          </article>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 3. НАВЫКИ -->
+    <section class="slide" id="skills">
+      <div class="slide-inner">
+        <h2 class="title">Навыки</h2>
+        <div class="skills">
+          <div class="skill"><span>HTML5</span><div class="bar"><i style="--w:90%"></i></div></div>
+          <div class="skill"><span>CSS3 / Flexbox / Grid</span><div class="bar"><i style="--w:85%"></i></div></div>
+          <div class="skill"><span>JavaScript</span><div class="bar"><i style="--w:70%"></i></div></div>
+          <div class="skill"><span>Figma</span><div class="bar"><i style="--w:80%"></i></div></div>
+          <div class="skill"><span>Tilda</span><div class="bar"><i style="--w:75%"></i></div></div>
+          <div class="skill"><span>Git и GitHub</span><div class="bar"><i style="--w:65%"></i></div></div>
+        </div>
+        <div class="tags">
+          <span>Адаптивная вёрстка</span><span>UI/UX</span><span>Командная работа</span><span>Внимание к деталям</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЛАЙД 4. ОПЫТ РАБОТЫ -->
+    <section class="slide" id="experience">
+      <div class="slide-inner">
+        <h2 class="title">Опыт работы</h2>
+        <ol class="timeline">
+          <li>
+            <time>2025 — настоящее время</time>
+            <h3>Фриланс-разработчик</h3>
+            <p>Вёрстка и дизайн сайтов для клиентов, поддержка и доработка проектов.</p>
+          </li>
+          <li>
+            <time>2024 — 2025</time>
+            <h3>Учебные проекты</h3>
+            <p>Создание сайтов на Tilda, макетов в Figma и страниц на HTML/CSS/JS, публикация на GitHub Pages.</p>
+          </li>
+          <li>
+            <time>2023 — 2024</time>
+            <h3>Стажёр / помощник дизайнера</h3>
+            <p>Подготовка графики, участие в небольших командных проектах.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- СЛАЙД 5. ОБРАЗОВАНИЕ -->
+    <section class="slide" id="education">
+      <div class="slide-inner">
+        <h2 class="title">Образование</h2>
+        <ol class="timeline">
+          <li>
+            <time>2024 — 2025</time>
+            <h3>Курс «Веб-разработка»</h3>
+            <p>HTML, CSS, JavaScript, Git/GitHub, основы дизайна и Figma.</p>
+          </li>
+          <li>
+            <time>2021 — 2025</time>
+            <h3>БШК</h3>
+            <p>Инженер</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- СЛАЙД 6. КОНТАКТЫ -->
+    <section class="slide" id="contacts">
+      <div class="slide-inner">
+        <h2 class="title">Контакты</h2>
+        <p class="lead">Буду рад новым проектам и знакомствам. Напишите мне!</p>
+        <ul class="contacts">
+          <li><a href="mailto:lolotrack153@gmail.com">✉️ lolotrack153@gmail.com</a></li>
+          <li><a href="https://t.me/MernentoMori" target="_blank" rel="noopener">💬 Telegram</a></li>
+          <li><a href="https://github.com/Nitrity" target="_blank" rel="noopener">🐙 GitHub</a></li>
+        </ul>
+        <button class="btn primary" data-goto="0">↑ Вернуться на главную</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Кнопки навигации по слайдам -->
+  <footer class="controls">
+    <button class="arrow" id="prev" aria-label="Предыдущий слайд">←</button>
+    <div class="dots" id="dots" aria-label="Выбор слайда"></div>
+    <button class="arrow" id="next" aria-label="Следующий слайд">→</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
